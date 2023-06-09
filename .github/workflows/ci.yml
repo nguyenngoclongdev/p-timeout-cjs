@@ -30,9 +30,6 @@ jobs:
       - name: Install dependency
         run: pnpm install --frozen-lockfile
 
-      - name: Compile package
-        run: pnpm build
-
       - name: Publish to NPM Package
         run: pnpm publish --no-git-checks
         env:
