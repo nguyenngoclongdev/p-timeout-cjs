@@ -1,18 +1,18 @@
-# p-timeout
+# p-timeout-cjs
 
-> Timeout a promise after a specified amount of time
+> Timeout a promise after a specified amount of time. A fork of [p-timeout](https://github.com/sindresorhus/p-timeout) for commonjs.
 
 ## Install
 
 ```sh
-npm install p-timeout
+npm install p-timeout-cjs
 ```
 
 ## Usage
 
 ```js
 import {setTimeout} from 'node:timers/promises';
-import pTimeout from 'p-timeout';
+import pTimeout from 'p-timeout-cjs';
 
 const delayedPromise = setTimeout(200);
 
@@ -62,7 +62,7 @@ Specify a custom error message or error to throw when it times out:
 If you do a custom error, it's recommended to sub-class `TimeoutError`:
 
 ```js
-import {TimeoutError} from 'p-timeout';
+import {TimeoutError} from 'p-timeout-cjs';
 
 class MyCustomError extends TimeoutError {
 	name = "MyCustomError";
@@ -79,7 +79,7 @@ You could for example retry:
 
 ```js
 import {setTimeout} from 'node:timers/promises';
-import pTimeout from 'p-timeout';
+import pTimeout from 'p-timeout-cjs';
 
 const delayedPromise = () => setTimeout(200);
 
@@ -103,7 +103,7 @@ Example:
 
 ```js
 import {setTimeout} from 'node:timers/promises';
-import pTimeout from 'p-timeout';
+import pTimeout from 'p-timeout-cjs';
 
 const originalSetTimeout = setTimeout;
 const originalClearTimeout = clearTimeout;
@@ -129,7 +129,7 @@ You can abort the promise using [`AbortController`](https://developer.mozilla.or
 *Requires Node.js 16 or later.*
 
 ```js
-import pTimeout from 'p-timeout';
+import pTimeout from 'p-timeout-cjs';
 import delay from 'delay';
 
 const delayedPromise = delay(3000);

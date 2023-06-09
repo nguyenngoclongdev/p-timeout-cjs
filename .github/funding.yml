@@ -1,4 +1,2 @@
 github: sindresorhus
-open_collective: sindresorhus
-tidelift: npm/p-timeout
-custom: https://sindresorhus.com/donate
+tidelift: npm/p-queue
