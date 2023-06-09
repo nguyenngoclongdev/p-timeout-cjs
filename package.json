@@ -1,6 +1,6 @@
 {
 	"name": "p-timeout-cjs",
-	"version": "5.0.2",
+	"version": "5.0.3",
 	"description": "Timeout a promise after a specified amount of time. A fork of p-timeout for commonjs.",
 	"repository": {
 		"type": "git",
